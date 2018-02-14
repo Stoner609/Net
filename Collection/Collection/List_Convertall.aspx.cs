@@ -14,7 +14,7 @@ namespace Collection
             return i.ToString();
         }
 
-        class BmiModel 
+        public class BmiModel 
         {
             public double weight;
             public double height;
