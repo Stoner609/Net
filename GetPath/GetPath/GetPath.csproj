@@ -7,12 +7,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{BC19CFAB-D6BB-498C-9256-5DC7021E65CF}</ProjectGuid>
+    <ProjectGuid>{2329E50A-F165-4084-81AE-7CE46C3232A8}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Collection</RootNamespace>
-    <AssemblyName>Collection</AssemblyName>
+    <RootNamespace>GetPath</RootNamespace>
+    <AssemblyName>GetPath</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -57,58 +57,18 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="List_Convertall.aspx" />
-    <Content Include="List_delegate.aspx" />
-    <Content Include="List_Index.aspx" />
-    <Content Include="Queue_Index.aspx" />
-    <Content Include="SortedList_Index.aspx" />
-    <Content Include="Stack_Index.aspx" />
+    <Content Include="index.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="List_Convertall.aspx.cs">
-      <DependentUpon>List_Convertall.aspx</DependentUpon>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="List_Convertall.aspx.designer.cs">
-      <DependentUpon>List_Convertall.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="List_delegate.aspx.cs">
-      <DependentUpon>List_delegate.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="List_delegate.aspx.designer.cs">
-      <DependentUpon>List_delegate.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="List_Index.aspx.cs">
-      <DependentUpon>List_Index.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="List_Index.aspx.designer.cs">
-      <DependentUpon>List_Index.aspx</DependentUpon>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Queue_Index.aspx.cs">
-      <DependentUpon>Queue_Index.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Queue_Index.aspx.designer.cs">
-      <DependentUpon>Queue_Index.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="SortedList_Index.aspx.cs">
-      <DependentUpon>SortedList_Index.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="SortedList_Index.aspx.designer.cs">
-      <DependentUpon>SortedList_Index.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Stack_Index.aspx.cs">
-      <DependentUpon>Stack_Index.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Stack_Index.aspx.designer.cs">
-      <DependentUpon>Stack_Index.aspx</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="Web.Debug.config">
@@ -133,7 +93,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>0</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:63580/</IISUrl>
+          <IISUrl>http://localhost:58046/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

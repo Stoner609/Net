@@ -7,12 +7,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{BC19CFAB-D6BB-498C-9256-5DC7021E65CF}</ProjectGuid>
+    <ProjectGuid>{52E4EB54-6C65-4500-B2C9-C6A298139EAE}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Collection</RootNamespace>
-    <AssemblyName>Collection</AssemblyName>
+    <RootNamespace>UsejQuerySubmitJson</RootNamespace>
+    <AssemblyName>UsejQuerySubmitJson</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -39,6 +39,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\fs05\ColaAPPsBin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -57,60 +61,24 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="List_Convertall.aspx" />
-    <Content Include="List_delegate.aspx" />
-    <Content Include="List_Index.aspx" />
-    <Content Include="Queue_Index.aspx" />
-    <Content Include="SortedList_Index.aspx" />
-    <Content Include="Stack_Index.aspx" />
+    <Content Include="index.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="List_Convertall.aspx.cs">
-      <DependentUpon>List_Convertall.aspx</DependentUpon>
+    <Compile Include="HandleIndex.ashx.cs">
+      <DependentUpon>HandleIndex.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="List_Convertall.aspx.designer.cs">
-      <DependentUpon>List_Convertall.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="List_delegate.aspx.cs">
-      <DependentUpon>List_delegate.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="List_delegate.aspx.designer.cs">
-      <DependentUpon>List_delegate.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="List_Index.aspx.cs">
-      <DependentUpon>List_Index.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="List_Index.aspx.designer.cs">
-      <DependentUpon>List_Index.aspx</DependentUpon>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Queue_Index.aspx.cs">
-      <DependentUpon>Queue_Index.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Queue_Index.aspx.designer.cs">
-      <DependentUpon>Queue_Index.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="SortedList_Index.aspx.cs">
-      <DependentUpon>SortedList_Index.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="SortedList_Index.aspx.designer.cs">
-      <DependentUpon>SortedList_Index.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Stack_Index.aspx.cs">
-      <DependentUpon>Stack_Index.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Stack_Index.aspx.designer.cs">
-      <DependentUpon>Stack_Index.aspx</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="HandleIndex.ashx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -133,7 +101,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>0</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:63580/</IISUrl>
+          <IISUrl>http://localhost:58611/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
