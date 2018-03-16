@@ -17,6 +17,7 @@ namespace WebMethod
         }
 
         /*
+         * http://codeclimber.net.nz/archive/2007/12/03/usehttpget-needs-you-to-enable-httpget-in-the-webconfig/
          * UseHttpGet 需要再webconfig啟用HttpGet
          * 如果想要用 asp.net Ajax頁面，必須使用ScriptService屬性，這會創建一個Javascript代理來使用
          * JSON格式來調用Web服務。
