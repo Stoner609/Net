@@ -59,6 +59,7 @@
   <ItemGroup>
     <Content Include="Distinct_index.aspx" />
     <Content Include="groupBy.aspx" />
+    <Content Include="groupBy2.aspx" />
     <Content Include="IComparer_index.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -76,6 +77,13 @@
     </Compile>
     <Compile Include="groupBy.aspx.designer.cs">
       <DependentUpon>groupBy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="groupBy2.aspx.cs">
+      <DependentUpon>groupBy2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="groupBy2.aspx.designer.cs">
+      <DependentUpon>groupBy2.aspx</DependentUpon>
     </Compile>
     <Compile Include="IComparer_index.aspx.cs">
       <DependentUpon>IComparer_index.aspx</DependentUpon>
