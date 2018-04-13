@@ -57,10 +57,26 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Distinct_index.aspx" />
+    <Content Include="groupBy.aspx" />
     <Content Include="IComparer_index.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Distinct_index.aspx.cs">
+      <DependentUpon>Distinct_index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Distinct_index.aspx.designer.cs">
+      <DependentUpon>Distinct_index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="groupBy.aspx.cs">
+      <DependentUpon>groupBy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="groupBy.aspx.designer.cs">
+      <DependentUpon>groupBy.aspx</DependentUpon>
+    </Compile>
     <Compile Include="IComparer_index.aspx.cs">
       <DependentUpon>IComparer_index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
