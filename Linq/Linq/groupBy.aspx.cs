@@ -17,6 +17,10 @@ namespace Linq
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            // https://msdn.microsoft.com/zh-tw/library/bb534304(v=vs.110).aspx
+            // http://linqsamples.com/linq-to-objects/grouping/GroupBy-lambda
+
+
             List<Person> persons = new List<Person>();
             persons.Add(new Person() { PersonID = 1, car = "Ferrari" });
             persons.Add(new Person() { PersonID = 1, car = "BMW" });
